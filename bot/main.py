@@ -39,7 +39,7 @@ async def on_message(message):
         return
 
     # If message is not a command or from bot, percentage chance to send quote
-    percentage_chance = 0.025 # 2.5%
+    percentage_chance = 0.015 # 1.5%
     if random.random() < percentage_chance:
         response = random.choice(zurich_quotes)[0]
         await message.channel.send(response)
